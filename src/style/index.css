@@ -269,3 +269,20 @@
   .whiteBg {
     background-color: #fff;
   }
+
+/* Start Mouse Follower*/
+.mouse-follower{
+  box-sizing: border-box;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  /* background-color: #0B093B; */
+  /* z-index: 1000; */
+  transition: 0.2s;
+  box-shadow: 0 0 5px black;
+  /* left:50%;
+  top:50% */
+}
+/* End Mouse Follower */
