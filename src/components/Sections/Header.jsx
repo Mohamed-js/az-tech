@@ -12,15 +12,21 @@ export default function Header() {
     <Wrapper id="home" className="container flexSpaceCenter">
       <LeftSide className="flexCenter">
         <div>
-          <h1 className="extraBold font60">We are Digital Agency.</h1>
+          <h1
+            className="extraBold font60"
+            style={{
+              position: "relative",
+              zIndex: 10,
+            }}
+          >
+            Unleash Your Business Potential with Our Expert Web Services.
+          </h1>
           <HeaderP className="font13 semiBold">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum.
+            We specialize in creating beautiful and functional websites that
+            drive conversions and boost your online presence.
           </HeaderP>
           <BtnWrapper>
-            <FullButton title="Get Started" />
+            <FullButton title="Get a Quote" />
           </BtnWrapper>
         </div>
       </LeftSide>

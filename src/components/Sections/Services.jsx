@@ -23,35 +23,41 @@ export default function Services() {
           <HeaderInfo>
             <h1 className="font40 extraBold">Our Awesome Services</h1>
             <p className="font13">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-              <br />
-              labore et dolore magna aliquyam erat, sed diam voluptua.
+              Our team is made up of experienced professionals with a diverse
+              range of backgrounds and expertise. <br /> From front-end
+              development to back-end programming, from UX design to content
+              strategy, <br /> we have the skills and knowledge to handle any
+              challenge that comes our way.
             </p>
           </HeaderInfo>
           <ServiceBoxRow className="flex">
             <ServiceBoxWrapper>
               <ServiceBox
-                icon="roller"
-                title="Graphic Design"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
-              />
-            </ServiceBoxWrapper>
-            <ServiceBoxWrapper>
-              <ServiceBox
                 icon="monitor"
-                title="Web Design"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore."
+                title="Web Design & Development"
+                subtitle="Our team of experienced designers and developers can create beautiful, functional websites that help you stand out from the competition. We use the latest design trends and technologies to create custom solutions that reflect your brand and engage your audience."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
                 icon="browser"
-                title="Development"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat."
+                title="E-Commerce Solutions"
+                subtitle="From small online stores to large e-commerce platforms, we have the expertise to build and optimize your e-commerce website. We can help you streamline your checkout process, manage your inventory, and increase your sales with targeted marketing strategies."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
-              <ServiceBox icon="printer" title="Print" subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor." />
+              <ServiceBox
+                icon="roller"
+                title="Graphic Design"
+                subtitle="Our team of skilled graphic designers can help you create stunning visual designs that reflect your brand and engage your audience. From logos and branding to marketing materials and social media graphics, we can help you create a cohesive visual identity that sets you apart from the competition."
+              />
+            </ServiceBoxWrapper>
+            <ServiceBoxWrapper>
+              <ServiceBox
+                icon="mobile"
+                title="Mobile Development"
+                subtitle="In today's mobile-first world, having a mobile app can help you reach and engage with your audience in new and powerful ways. Our experienced mobile app developers can help you create custom mobile apps that are tailored to your specific business needs. We use the latest technologies to ensure that your app is fast, reliable, and user-friendly."
+              />
             </ServiceBoxWrapper>
           </ServiceBoxRow>
         </div>
@@ -62,15 +68,28 @@ export default function Services() {
                 <h4 className="font15 semiBold">A few words about company</h4>
                 <h2 className="font40 extraBold">A Study of Creativity</h2>
                 <p className="font12">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-                  diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                  At AZ Tech , we're not just building websites and
+                  applications, we're building <strong>relationships</strong>.{" "}
+                  <br />
+                  Contact us today to learn more about how we can help you
+                  achieve your online goals.
                 </p>
-                <ButtonsRow className="flexNullCenter" style={{ margin: "30px 0"}}>
+                <ButtonsRow
+                  className="flexNullCenter"
+                  style={{ margin: "30px 0" }}
+                >
                   <div style={{ width: "190px" }}>
-                    <FullButton title="Get Started" action={() => alert("clicked")} />
+                    <FullButton
+                      title="Get Started"
+                      action={() => alert("clicked")}
+                    />
                   </div>
                   <div style={{ width: "190px", marginLeft: "15px" }}>
-                    <FullButton title="Contact Us" action={() => alert("clicked")} border />
+                    <FullButton
+                      title="Contact Us"
+                      action={() => alert("clicked")}
+                      border
+                    />
                   </div>
                 </ButtonsRow>
               </AddLeft>
