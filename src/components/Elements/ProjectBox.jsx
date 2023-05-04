@@ -1,14 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 
-export default function ProjectBox({ img, title, text, action}) {
+export default function ProjectBox({ img, title, text, action, href}) {
   return (
     <Wrapper>
+      <a  href={href ? href : "/"} target="_blank" rel="noreferrer"> 
       <ImgBtn className="aniamte pointer" onClick={action ? () => action() : null}>
         <img className="radius8" src={img} alt="project"></img>
       </ImgBtn>
       <h3 className="font20 extraBold">{title}</h3>
       <p className="font13">{text}</p>
+      </a>
     </Wrapper>
   );
 }

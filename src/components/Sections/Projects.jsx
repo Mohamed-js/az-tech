@@ -32,25 +32,28 @@ export default function Projects() {
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
                 img={ProjectImg1}
-                title="Awesome Project"
-                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-                action={() => alert("clicked")}
-              />
+                title="Cashier"
+                text="A web-based cashier app. It enables users to store and track their sales and give them some statistics and charts about their performance."
+                // action={() => alert("clicked")}
+                href={"https://mohamed-zakaria-coder.github.io/Cashier/"}
+                />
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
                 img={ProjectImg2}
-                title="Awesome Project"
-                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-                action={() => alert("clicked")}
+                title="Dashboard"
+                text="A Multi Page Application Dashboard Made By Html And CSS, It Contains 9 Pages."
+                // action={() => alert("clicked")}
+                href={"https://mohamed-zakaria-coder.github.io/dashboard/"}
               />
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
                 img={ProjectImg3}
-                title="Awesome Project"
-                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-                action={() => alert("clicked")}
+                title="Landing-Page"
+                text="A Store For Selling The Best Hair Products For The Health Of Your Hair And It Provides Natural Products"
+                // action={() => alert("clicked")}
+                href={"https://mohamed-zakaria-coder.github.io/landing-page/"}
               />
             </div>
           </div>
@@ -58,25 +61,28 @@ export default function Projects() {
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
                 img={ProjectImg4}
-                title="Awesome Project"
-                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-                action={() => alert("clicked")}
+                title="SellEx"
+                text="A great solution to manage sales, stocks, online, and offline orders."
+                // action={() => alert("clicked")}
+                href={"https://sellex-store.onrender.com/"}
               />
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
                 img={ProjectImg5}
-                title="Awesome Project"
-                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-                action={() => alert("clicked")}
-              />
+                title="Agz5anty Pharmacy"
+                text="A pharmacy delivery mobile app to deliver medications and cosmetics."
+                // action={() => alert("clicked")}
+                href={"https://mohamed-js.github.io/agz5anty-landing/"}
+                />
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
                 img={ProjectImg6}
-                title="Awesome Project"
-                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-                action={() => alert("clicked")}
+                title="Store"
+                text="A Single Page Application Store For Selling Products Online."
+                // action={() => alert("clicked")}
+                href={"https://sellex-store.vercel.app/otaku"}
               />
             </div>
           </div>

@@ -1,4 +1,7 @@
-import React from "react";
+import React, {useRef} from "react";
+import emailjs from "@emailjs/browser";
+import { MdGppGood } from "react-icons/md";
+
 import styled from "styled-components";
 // Assets
 import ContactImg1 from "../../assets/img/contact.avif";
@@ -6,6 +9,35 @@ import ContactImg2 from "../../assets/img/get-touch2.jpg";
 import ContactImg3 from "../../assets/img/get-touch3.png";
 
 export default function Contact() {
+  let form = useRef();
+  function sendEmail(e) {
+    e.preventDefault();  
+
+    emailjs
+      .sendForm(
+        "service_xigwt69",
+        "template_bbqovfm",
+        e.target,
+        "6G0CHBs5c54MM839E"
+      )
+      .then(
+        (result) => {
+          if (result.text === "OK") {
+            document.querySelector(".successfully-sent").style.display =
+              "inline-flex";
+            setTimeout(function () {
+              return (document.querySelector(
+                ".successfully-sent"
+              ).style.display = "none");
+            }, 5000);
+          }
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  }
   return (
     <Wrapper id="contact">
       <div className="lightBg">
@@ -21,12 +53,12 @@ export default function Contact() {
           </HeaderInfo>
           <div className="row" style={{ paddingBottom: "30px" }}>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-              <Form>
+              <Form ref={form} onSubmit={sendEmail} id="send-email">
                 <label className="font13">First name:</label>
                 <input
+                  name="name"
                   type="text"
                   id="fname"
-                  name="fname"
                   className="font20 extraBold"
                 />
                 <label className="font13">Email:</label>
@@ -58,6 +90,7 @@ export default function Contact() {
                   value="Send Message"
                   className="pointer animate radius8"
                   style={{ maxWidth: "220px" }}
+                  form="send-email"
                 />
               </SumbitWrapper>
             </div>
@@ -77,6 +110,9 @@ export default function Contact() {
           </div>
         </div>
       </div>
+      <div className="successfully-sent">
+      Your Message Has Been Sent <MdGppGood className="correct" />
+    </div>
     </Wrapper>
   );
 }
