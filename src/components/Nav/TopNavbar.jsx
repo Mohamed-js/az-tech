@@ -8,7 +8,7 @@ import Backdrop from "../Elements/Backdrop";
 // import LogoIcon from "../../assets/svg/Logo";
 import BurgerIcon from "../../assets/svg/BurgerIcon";
 
-import LogoIcon from "../../assets/img/azlogo.png";
+import LogoIcon from "../../assets/img/logo-no-background.png";
 
 export default function TopNavbar() {
   const [y, setY] = useState(window.scrollY);
