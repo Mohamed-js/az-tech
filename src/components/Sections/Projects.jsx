@@ -20,10 +20,12 @@ export default function Projects() {
           <HeaderInfo>
             <h1 className="font40 extraBold">Our Awesome Projects</h1>
             <p className="font13">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut
+              Our team of experienced professionals is passionate about pushing
+              the boundaries of what's possible and finding creative solutions
+              to complex problems.
               <br />
-              labore et dolore magna aliquyam erat, sed diam voluptua.
+              We're always looking for ways to improve and refine our processes
+              to ensure we're delivering the highest quality work.
             </p>
           </HeaderInfo>
           <div className="row textCenter">
@@ -96,13 +98,17 @@ export default function Projects() {
               </AddLeftInner>
             </AddLeft>
             <AddRight>
-              <h4 className="font15 semiBold">A few words about company</h4>
+              <h4 className="font15 semiBold">
+                "Creativity is intelligence having fun." - Albert Einstein
+              </h4>
               <h2 className="font40 extraBold">A Study of Creativity</h2>
               <p className="font12">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                justo duo dolores et ea rebum.
+                At AZ Tech, we believe that creativity is a vital component of
+                success in any field. That's why we strive to foster a creative
+                and collaborative environment in everything we do, from product
+                design to customer service. We're constantly exploring new ideas
+                and pushing boundaries to find innovative solutions to the
+                challenges our customers face.
               </p>
               <ButtonsRow
                 className="flexNullCenter"

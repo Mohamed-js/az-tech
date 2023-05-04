@@ -13,10 +13,10 @@ export default function Contact() {
           <HeaderInfo>
             <h1 className="font40 extraBold">Let's get in touch</h1>
             <p className="font13">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut
-              <br />
-              labore et dolore magna aliquyam erat, sed diam voluptua.
+              We would love to hear from you! If you have any questions or
+              comments about our products or services, <br /> please don't
+              hesitate to contact us using the form below. <br /> We'll get back
+              to you as soon as possible.
             </p>
           </HeaderInfo>
           <div className="row" style={{ paddingBottom: "30px" }}>

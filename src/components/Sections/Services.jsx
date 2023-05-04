@@ -66,8 +66,8 @@ export default function Services() {
           <div className="container">
             <Advertising className="flexSpaceCenter">
               <AddLeft>
-                <h4 className="font15 semiBold">A few words about company</h4>
-                <h2 className="font40 extraBold">A Study of Creativity</h2>
+                <h4 className="font15 semiBold">A few words about us</h4>
+                <h2 className="font40 extraBold">Tech from A to Z</h2>
                 <p className="font12">
                   At AZ Tech , we're not just building websites and
                   applications, we're building <strong>relationships</strong>.{" "}
