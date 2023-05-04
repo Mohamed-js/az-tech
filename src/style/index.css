@@ -78,12 +78,14 @@ summary,
 time,
 mark,
 audio,
-video {
+video,
+button {
   margin: 0;
   padding: 0;
   border: 0;
   vertical-align: baseline;
   box-sizing: border-box;
+  z-index: 100;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -365,6 +367,9 @@ body {
   box-shadow: 0 0 5px black;
   /* left:50%;
   top:50% */
+}
+h1.extraBold, p.font13{
+  position: relative;
 }
 /* End Mouse Follower */
 
