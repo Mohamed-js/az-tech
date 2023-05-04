@@ -8,7 +8,7 @@ import Backdrop from "../Elements/Backdrop";
 // import LogoIcon from "../../assets/svg/Logo";
 import BurgerIcon from "../../assets/svg/BurgerIcon";
 
-import LogoIcon from "../../assets/img/azlogo.png";
+import LogoIcon from "../../assets/img/logo-no-background.png";
 
 export default function TopNavbar() {
   const [y, setY] = useState(window.scrollY);
@@ -48,7 +48,7 @@ export default function TopNavbar() {
             </div>
 
             <h1 style={{ marginLeft: "15px" }} className="font20 extraBold">
-              AZ TECH
+              AZ Tech
             </h1>
           </Link>
           <BurderWrapper
@@ -132,19 +132,21 @@ export default function TopNavbar() {
             </li>
           </UlWrapper>
           <UlWrapperRight className="flexNullCenter">
-            <li className="semiBold font15 pointer">
-              <a href="/" style={{ padding: "10px 30px 10px 0" }}>
-                Log in
-              </a>
-            </li>
             <li className="semiBold font15 pointer flexCenter">
-              <a
-                href="/"
+              <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-80}
                 className="radius8 lightBg"
-                style={{ padding: "10px 15px" }}
+                style={{
+                  padding: "10px 15px",
+                  backgroundColor: "#7620ff",
+                  color: "white",
+                }}
               >
-                Get Started
-              </a>
+                Get In Touch
+              </Link>
             </li>
           </UlWrapperRight>
         </NavInner>

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-scroll";
 // Assets
-import LogoImg from "../../assets/svg/Logo";
+import LogoImg from "../../assets/img/logo-white.png";
 
 export default function Contact() {
   const getCurrentYear = () => {
@@ -13,17 +13,17 @@ export default function Contact() {
     <Wrapper>
       <div className="darkBg">
         <div className="container">
-          <InnerWrapper
-            className="flexSpaceCenter"
-            style={{ padding: "30px 0" }}
-          >
+          <InnerWrapper className="flexSpaceCenter">
             <Link
               className="flexCenter animate pointer"
+              style={{
+                maxHeight: 100,
+              }}
               to="home"
               smooth={true}
               offset={-80}
             >
-              <LogoImg />
+              <img src={LogoImg} alt="AZ Tech" style={{ maxHeight: 100 }} />
               <h1
                 className="font15 extraBold whiteColor"
                 style={{ marginLeft: "15px" }}

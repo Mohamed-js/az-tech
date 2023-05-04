@@ -3,19 +3,22 @@ import styled from "styled-components";
 import { Link } from "react-scroll";
 // Assets
 import CloseIcon from "../../assets/svg/CloseIcon";
-import LogoIcon from "../../assets/svg/Logo";
+import LogoIcon from "../../assets/img/logo-no-background.png";
 
 export default function Sidebar({ sidebarOpen, toggleSidebar }) {
   return (
     <Wrapper className="animate darkBg" sidebarOpen={sidebarOpen}>
       <SidebarHeader className="flexSpaceCenter">
         <div className="flexNullCenter">
-          <LogoIcon />
+          <img src={LogoIcon} alt="AZ Tech" style={{ height: 60 }} />
           <h1 className="whiteColor font20" style={{ marginLeft: "15px" }}>
-            fanatic
+            AZ Tech
           </h1>
         </div>
-        <CloseBtn onClick={() => toggleSidebar(!sidebarOpen)} className="animate pointer">
+        <CloseBtn
+          onClick={() => toggleSidebar(!sidebarOpen)}
+          className="animate pointer"
+        >
           <CloseIcon />
         </CloseBtn>
       </SidebarHeader>
@@ -63,34 +66,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             Projects
           </Link>
         </li>
-        <li className="semiBold font15 pointer">
-          <Link
-            onClick={() => toggleSidebar(!sidebarOpen)}
-            activeClass="active"
-            className="whiteColor"
-            style={{ padding: "10px 15px" }}
-            to="blog"
-            spy={true}
-            smooth={true}
-            offset={-60}
-          >
-            Blog
-          </Link>
-        </li>
-        <li className="semiBold font15 pointer">
-          <Link
-            onClick={() => toggleSidebar(!sidebarOpen)}
-            activeClass="active"
-            className="whiteColor"
-            style={{ padding: "10px 15px" }}
-            to="pricing"
-            spy={true}
-            smooth={true}
-            offset={-60}
-          >
-            Pricing
-          </Link>
-        </li>
+
         <li className="semiBold font15 pointer">
           <Link
             onClick={() => toggleSidebar(!sidebarOpen)}
@@ -107,15 +83,22 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
         </li>
       </UlStyle>
       <UlStyle className="flexSpaceCenter">
-        <li className="semiBold font15 pointer">
-          <a href="/" style={{ padding: "10px 30px 10px 0" }} className="whiteColor">
-            Log in
-          </a>
-        </li>
         <li className="semiBold font15 pointer flexCenter">
-          <a href="/" className="radius8 lightBg" style={{ padding: "10px 15px" }}>
+          <Link
+            onClick={() => toggleSidebar(!sidebarOpen)}
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-80}
+            className="radius8 lightBg"
+            style={{
+              padding: "10px 15px",
+              backgroundColor: "#7620ff",
+              color: "white",
+            }}
+          >
             Get Started
-          </a>
+          </Link>
         </li>
       </UlStyle>
     </Wrapper>
@@ -145,6 +128,7 @@ const CloseBtn = styled.button`
 `;
 const UlStyle = styled.ul`
   padding: 40px;
+  justify-content: center;
   li {
     margin: 20px 0;
   }

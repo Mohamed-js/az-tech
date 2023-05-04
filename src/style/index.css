@@ -380,3 +380,7 @@ h1.extraBold, p.font13{
 .slick-slide div:last-child {
   height: 120px;
 }
+
+.justify-content-center {
+  justify-content: center;
+}

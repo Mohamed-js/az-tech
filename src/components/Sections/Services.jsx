@@ -5,10 +5,11 @@ import ClientSlider from "../Elements/ClientSlider";
 import ServiceBox from "../Elements/ServiceBox";
 import FullButton from "../Buttons/FullButton";
 // Assets
-import AddImage1 from "../../assets/img/add/1.png";
-import AddImage2 from "../../assets/img/add/2.png";
-import AddImage3 from "../../assets/img/add/3.png";
-import AddImage4 from "../../assets/img/add/4.png";
+import AddImage1 from "../../assets/img/landing1.jpeg";
+import AddImage2 from "../../assets/img/landing2.jpg";
+import AddImage3 from "../../assets/img/landing3.png";
+import AddImage4 from "../../assets/img/landing4.jpg";
+import AddImage5 from "../../assets/img/bright.webp";
 
 export default function Services() {
   return (
@@ -65,8 +66,8 @@ export default function Services() {
           <div className="container">
             <Advertising className="flexSpaceCenter">
               <AddLeft>
-                <h4 className="font15 semiBold">A few words about company</h4>
-                <h2 className="font40 extraBold">A Study of Creativity</h2>
+                <h4 className="font15 semiBold">A few words about us</h4>
+                <h2 className="font40 extraBold">Tech from A to Z</h2>
                 <p className="font12">
                   At AZ Tech , we're not just building websites and
                   applications, we're building <strong>relationships</strong>.{" "}
@@ -97,19 +98,19 @@ export default function Services() {
                 <AddRightInner>
                   <div className="flexNullCenter">
                     <AddImgWrapp1 className="flexCenter">
-                      <img src={AddImage1} alt="office" />
+                      <img src={AddImage5} alt="office" />
                     </AddImgWrapp1>
                     <AddImgWrapp2>
-                      <img src={AddImage2} alt="office" />
+                      <img src={AddImage3} alt="office" />
                     </AddImgWrapp2>
                   </div>
                   <div className="flexNullCenter">
                     <AddImgWrapp3>
-                      <img src={AddImage3} alt="office" />
-                    </AddImgWrapp3>
-                    <AddImgWrapp4>
                       <img src={AddImage4} alt="office" />
-                    </AddImgWrapp4>
+                    </AddImgWrapp3>
+                    {/* <AddImgWrapp4>
+                      <img src={AddImage4} alt="office" />
+                    </AddImgWrapp4> */}
                   </div>
                 </AddRightInner>
               </AddRight>
@@ -220,8 +221,8 @@ const AddImgWrapp2 = styled.div`
   }
 `;
 const AddImgWrapp3 = styled.div`
-  width: 20%;
-  margin-left: 40%;
+  width: 90%;
+  margin-left: 50%;
   img {
     width: 100%;
     height: auto;
