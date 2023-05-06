@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import styled from "styled-components";
 // Components
 import ClientSlider from "../Elements/ClientSlider";
@@ -11,7 +11,16 @@ import AddImage3 from "../../assets/img/landing3.png";
 import AddImage4 from "../../assets/img/landing4.jpg";
 import AddImage5 from "../../assets/img/bright.webp";
 
+// AOS library
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export default function Services() {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
   return (
     <Wrapper id="services">
       <div className="lightBg" style={{ padding: "50px 0" }}>
@@ -19,9 +28,11 @@ export default function Services() {
           <ClientSlider />
         </div>
       </div>
-      <div className="whiteBg" style={{ padding: "60px 0" }}>
+      <div className="whiteBg" style={{ padding: "60px 0" }}
+        
+      >
         <div className="container">
-          <HeaderInfo>
+          <HeaderInfo >
             <h1 className="font40 extraBold">Our Awesome Services</h1>
             <p className="font13">
               Our team is made up of experienced professionals with a diverse
@@ -31,29 +42,29 @@ export default function Services() {
               challenge that comes our way.
             </p>
           </HeaderInfo>
-          <ServiceBoxRow className="flex">
-            <ServiceBoxWrapper>
+          <ServiceBoxRow className="flex" >
+            <ServiceBoxWrapper data-aos= "fade-up">
               <ServiceBox
                 icon="monitor"
                 title="Web Design & Development"
                 subtitle="Our team of experienced designers and developers can create beautiful, functional websites that help you stand out from the competition. We use the latest design trends and technologies to create custom solutions that reflect your brand and engage your audience."
               />
             </ServiceBoxWrapper>
-            <ServiceBoxWrapper>
+            <ServiceBoxWrapper data-aos= "fade-up">
               <ServiceBox
                 icon="browser"
                 title="E-Commerce Solutions"
                 subtitle="From small online stores to large e-commerce platforms, we have the expertise to build and optimize your e-commerce website. We can help you streamline your checkout process, manage your inventory, and increase your sales with targeted marketing strategies."
               />
             </ServiceBoxWrapper>
-            <ServiceBoxWrapper>
+            <ServiceBoxWrapper data-aos= "fade-up"> 
               <ServiceBox
                 icon="roller"
                 title="Graphic Design"
                 subtitle="Our team of skilled graphic designers can help you create stunning visual designs that reflect your brand and engage your audience. From logos and branding to marketing materials and social media graphics, we can help you create a cohesive visual identity that sets you apart from the competition."
               />
             </ServiceBoxWrapper>
-            <ServiceBoxWrapper>
+            <ServiceBoxWrapper data-aos= "fade-up">
               <ServiceBox
                 icon="mobile"
                 title="Mobile Development"

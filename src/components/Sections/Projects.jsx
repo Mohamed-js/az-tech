@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 // Components
 import ProjectBox from "../Elements/ProjectBox";
@@ -12,7 +12,16 @@ import ProjectImg5 from "../../assets/img/projects/5.png";
 import ProjectImg6 from "../../assets/img/projects/6.png";
 import AddImage2 from "../../assets/img/bright.webp";
 
+// AOS Library
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export default function Projects() {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
   return (
     <Wrapper id="projects">
       <div className="whiteBg">
@@ -29,16 +38,22 @@ export default function Projects() {
             </p>
           </HeaderInfo>
           <div className="row textCenter">
-            <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <div
+              className="col-xs-12 col-sm-4 col-md-4 col-lg-4"
+              data-aos="fade-right"
+            >
               <ProjectBox
                 img={ProjectImg1}
                 title="Cashier"
                 text="A web-based cashier app. It enables users to store and track their sales and give them some statistics and charts about their performance."
                 // action={() => alert("clicked")}
                 href={"https://mohamed-zakaria-coder.github.io/Cashier/"}
-                />
+              />
             </div>
-            <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <div
+              className="col-xs-12 col-sm-4 col-md-4 col-lg-4"
+              data-aos="zoom-in"
+            >
               <ProjectBox
                 img={ProjectImg2}
                 title="Dashboard"
@@ -47,7 +62,10 @@ export default function Projects() {
                 href={"https://mohamed-zakaria-coder.github.io/dashboard/"}
               />
             </div>
-            <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <div
+              className="col-xs-12 col-sm-4 col-md-4 col-lg-4"
+              data-aos="fade-left"
+            >
               <ProjectBox
                 img={ProjectImg3}
                 title="Landing-Page"
@@ -58,7 +76,10 @@ export default function Projects() {
             </div>
           </div>
           <div className="row textCenter">
-            <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <div
+              className="col-xs-12 col-sm-4 col-md-4 col-lg-4"
+              data-aos="fade-right"
+            >
               <ProjectBox
                 img={ProjectImg4}
                 title="SellEx"
@@ -67,16 +88,22 @@ export default function Projects() {
                 href={"https://sellex-store.onrender.com/"}
               />
             </div>
-            <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <div
+              className="col-xs-12 col-sm-4 col-md-4 col-lg-4"
+              data-aos="zoom-in"
+            >
               <ProjectBox
                 img={ProjectImg5}
                 title="Agz5anty Pharmacy"
                 text="A pharmacy delivery mobile app to deliver medications and cosmetics."
                 // action={() => alert("clicked")}
                 href={"https://mohamed-js.github.io/agz5anty-landing/"}
-                />
+              />
             </div>
-            <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <div
+              className="col-xs-12 col-sm-4 col-md-4 col-lg-4"
+              data-aos="fade-left"
+            >
               <ProjectBox
                 img={ProjectImg6}
                 title="Store"
